@@ -4,36 +4,35 @@
     <title>Extra</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
-      <nav class="">
-        <ul class="">
-          <li class="">
-            <h4>Imagen</h4>
-          </li>
-          <li class="">
-            <%= link_to "Inicio", root_path %>
-          </li>
-          <li class="">
-            <%= link_to "Plan de estudios", root_path%>
-          </li>
-          <li class="">
-            <%=link_to "Guias", root_path%>
-          </li>
-          <li class="">
-            <%=link_to"Nuevo Usuario", new_user_path%>
-          </li>
-           <li class="">  
-              <%=link_to "Examens Prueba",root_path%>
-          </li>
+     <nav class="navbar navbar-inverse navbar-fixed-top large-padding" role="navigation"">
+  <div class="container-fluid">
+    <div class="navbar-header large-padding">
+      <%= link_to "extra", root_path%>
+          
+          <a class="col-md"><%=link_to "Inicio", root_path%></a> 
+          <a class="col-md"><%= link_to "Plan de estudios", root_path%></a>
+          <a class="col-md"><%=link_to "Guias", root_path%></a>
+          <a class="col-md"><%=link_to"Nuevo Usuario", new_user_path%></a>
+          <a class="col-md"><%=link_to "Examens Prueba",root_path%></a>
+    </div>
+    <div class="">
+        <ul class="list-unstyled list-inline">
+            <li> <%=link_to "Login", root_path%> </li>
+            <li> <%=link_to "Sig in", root_path%> </li>
         </ul>
-      </nav>
+    </div>
+  </div>
+</nav>
     </header>
+
     <%= yield %>
   </body>
 </html>

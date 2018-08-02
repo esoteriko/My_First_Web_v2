@@ -1,0 +1,19 @@
+html{
+	margin:none;
+}
+.logo{
+	width:111;
+    height:95;
+    text-align: left;
+    margin: 15px 0px 15px 20px;
+}
+.large-padding{
+	padding:10px 17px;
+}
+a,a:visited{
+	color: inherit !important;
+	text-decoration: none;
+}
+.header{
+	color: blue;
+}

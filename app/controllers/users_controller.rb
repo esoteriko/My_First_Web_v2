@@ -17,10 +17,12 @@ class UsersController < ApplicationController
 	
 
 	def create
-		
+		@user = User.new(user_params)
+		@user.save
+		redirect_to @user
 	end
 
 	def user_params
-		params.require(:user).permit(:user_name, :password)
+		params.require(:user).permit(:name, :last_name, :group, :count_number, :user_name, :password, :password_2)
 	end
 end
