@@ -1,9 +1,8 @@
 <h1>Todos los usuarios</h1>
-<table>
+<table class="table table-striped">
 <% @user.each do |user| %>
 	<tr>
-		<td> <%= user.user_name%></td>
-
+		<td><strong>user name:</strong></td><td class=""><%= user.user_name%><br></td>
     </tr>  
 	</table>
 <%end%>

@@ -8,6 +8,7 @@ gem 'bootstrap', '~>4.0.0'
 gem 'jquery-rails'
 gem 'cancancan'
 gem 'rolify'
+gem 'bcrypt'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'

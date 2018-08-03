@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'sessions/new'
+  resources :sessions
   get 'inicio/index'
   resources :users
   root 'inicio#index'
