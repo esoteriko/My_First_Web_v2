@@ -11,4 +11,10 @@ class User < ApplicationRecord
     self.add_role(:newuser) if self.roles.blank?
   end
    
+   validates :name, :last_name, :group, :count_number, :user_name, :password, presence: true
+   validates :count_number, numericality: {only_integer: true}
+   validates :password, length: {minimum: 3}
+   #validates :password, confirmation: true
+   	
+  
 end
